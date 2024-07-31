@@ -1,7 +1,7 @@
 # Task.1-ROS
 1. Set Locale
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Update package list and install locales package
@@ -19,7 +19,7 @@ locale
 2. Setup Sources
 a. Enable the Universe Repository
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Check if universe repository is enabled
@@ -33,7 +33,7 @@ fi
 apt-cache policy | grep universe
 b. Add the ROS 2 Apt Repository
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Update package list and install curl, gnupg2, lsb-release
@@ -50,14 +50,14 @@ sudo apt update
 3. Install ROS 2 Packages
 a. Upgrade System Packages
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Ensure the system is up to date
 sudo apt upgrade -y
 b. Install ROS 2 Desktop
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Install ROS 2 Foxy desktop version
@@ -65,7 +65,7 @@ sudo apt install -y ros-foxy-desktop
 4. Environment Setup
 a. Source the ROS 2 Setup Script
 bash
-نسخ الكود
+
 #!/bin/bash
 
 # Source the ROS 2 setup script
@@ -81,13 +81,14 @@ environment_setup.sh
 Make the scripts executable:
 
 bash
-نسخ الكود
+
 chmod +x set_locale.sh setup_sources.sh install_ros2.sh environment_setup.sh
 Run the scripts in order:
 bash
-نسخ الكود
+
 ./set_locale.sh
 ./setup_sources.sh
 ./install_ros2.sh
 ./environment_setup.sh
+
 This method ensures each step is clearly defined and executed in sequence, with additional checks and confirmations along the way.
